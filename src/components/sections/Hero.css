@@ -1,7 +1,7 @@
 .hero-section {
     min-height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     position: relative;
     overflow: hidden;
     padding: 6rem 2rem 0 2rem;
@@ -436,7 +436,7 @@
     .hero-content {
         flex-direction: column;
         text-align: center;
-        margin-top: 5rem;
+        margin-top: 2rem;
     }
 
     .hero-cta {
