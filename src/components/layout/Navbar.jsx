@@ -1,19 +1,33 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Sun, Moon } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [theme, setTheme] = useState('dark');
 
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 50);
         };
         window.addEventListener('scroll', handleScroll);
+        
+        // Theme initialization
+        const savedTheme = localStorage.getItem('portfolio-theme') || 'dark';
+        setTheme(savedTheme);
+        document.documentElement.setAttribute('data-theme', savedTheme);
+
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+
+    const toggleTheme = () => {
+        const newTheme = theme === 'dark' ? 'light' : 'dark';
+        setTheme(newTheme);
+        localStorage.setItem('portfolio-theme', newTheme);
+        document.documentElement.setAttribute('data-theme', newTheme);
+    };
 
     const scrollToSection = (id) => {
         setMobileMenuOpen(false);
@@ -49,6 +63,9 @@ const Navbar = () => {
                             {link.name}
                         </button>
                     ))}
+                    <button onClick={toggleTheme} className="theme-toggle-btn" aria-label="Toggle Theme">
+                        {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+                    </button>
                     <a href="#" className="resume-btn" onClick={(e) => { e.preventDefault(); alert('Resume not available yet. Please upload resume.pdf.'); }}>
                         Resume
                     </a>
@@ -74,6 +91,9 @@ const Navbar = () => {
                         {link.name}
                     </button>
                 ))}
+                <button onClick={toggleTheme} className="mobile-theme-toggle-btn" aria-label="Toggle Theme">
+                    {theme === 'dark' ? <><Sun size={20} /> Light Mode</> : <><Moon size={20} /> Dark Mode</>}
+                </button>
                 <a href="#" className="mobile-resume-btn" onClick={(e) => { e.preventDefault(); alert('Resume not available yet. Please upload resume.pdf.'); }}>
                     Resume
                 </a>

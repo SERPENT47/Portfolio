@@ -87,6 +87,21 @@
     display: none;
 }
 
+.theme-toggle-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    transition: all var(--transition-fast);
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.theme-toggle-btn:hover {
+    color: var(--accent-cyan);
+    background: var(--glass-bg);
+}
+
 .mobile-menu {
     display: none;
 }
@@ -139,5 +154,17 @@
         border: 1px solid var(--accent-cyan);
         color: var(--accent-cyan);
         border-radius: 4px;
+    }
+
+    .mobile-theme-toggle-btn {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 0;
+        font-size: 1.1rem;
+        color: var(--text-primary);
+        border-bottom: 1px solid var(--glass-border);
+        text-align: left;
+        width: 100%;
     }
 }
