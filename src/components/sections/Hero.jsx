@@ -35,7 +35,7 @@ const Hero = () => {
                     </div>
 
                     <p className="hero-description">
-                        Research Engineer with 3+ years of experience building scalable AI/ML systems in the Computer Vision and NLP domains. Specialized in transforming advanced research into industry-standard embedded products and IoT solutions. Possess a deep interest in robotics and intelligent systems with noteworthy competitive achievements.
+                        AI & Robotics Enthusiast with 3+ years of professional experience building scalable AI/ML systems in the Computer Vision and NLP domains. Specialized in transforming advanced research into industry-standard embedded products and IoT solutions. Possess a deep interest in robotics and intelligent systems with noteworthy competitive achievements.
                     </p>
 
                     <div className="hero-cta">
