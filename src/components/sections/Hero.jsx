@@ -20,19 +20,8 @@ const Hero = () => {
                     <span className="hero-greeting">Hi, I'm</span>
                     <h1 className="hero-name">Khaliduzzaman Mredul</h1>
                     <h2 className="hero-title">
-                        <span className="gradient-text">Research Engineer</span>
+                        <span className="gradient-text">AI/ML || Computer Vision || NLP || Robotics || IoT</span>
                     </h2>
-                    <div className="hero-tags">
-                        <span>AI/ML</span>
-                        <span className="separator">||</span>
-                        <span>Computer Vision</span>
-                        <span className="separator">||</span>
-                        <span>NLP</span>
-                        <span className="separator">||</span>
-                        <span>Robotics</span>
-                        <span className="separator">||</span>
-                        <span>IoT</span>
-                    </div>
 
                     <p className="hero-description">
                         AI & Robotics Enthusiast with 3+ years of professional experience building scalable AI/ML systems in the Computer Vision and NLP domains. Specialized in transforming advanced research into industry-standard embedded products and IoT solutions. Possess a deep interest in robotics and intelligent systems with noteworthy competitive achievements.
