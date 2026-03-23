@@ -10,10 +10,16 @@
 
 .navbar.scrolled {
     padding: 1rem 2rem;
-    background: rgba(10, 10, 15, 0.8);
+    background: var(--nav-bg-scrolled, rgba(10, 10, 15, 0.8));
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-radius: 0;
     border: none;
     border-bottom: 1px solid var(--glass-border);
+}
+
+[data-theme="light"] .navbar.scrolled {
+    --nav-bg-scrolled: rgba(248, 249, 250, 0.85);
 }
 
 .nav-content {
