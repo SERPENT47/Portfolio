@@ -35,19 +35,19 @@ const AcademicsAndAchievements = () => {
         },
         {
             title: "Global Recognitions",
-            details: [
-                <div key="nhrl" style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
-                    <span style={{ color: 'var(--accent-cyan)', fontWeight: 500 }}>National Havoc Robot League (NHRL)</span>
-                    <span>Connecticut, USA - 2024, 2025</span>
-                </div>,
-                <div key="urc" style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
-                    <span style={{ color: 'var(--accent-cyan)', fontWeight: 500 }}>University Rover Challenge (URC)</span>
-                    <span>Utah, USA - 2022</span>
-                </div>,
-                <div key="irc" style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
-                    <span style={{ color: 'var(--accent-cyan)', fontWeight: 500 }}>International Rover Challenge (IRC)</span>
-                    <span>Karnataka, India - 2023</span>
-                </div>
+            subEvents: [
+                {
+                    event: "National Havoc Robot League (NHRL)",
+                    details: ["Connecticut, USA - 2024, 2025"]
+                },
+                {
+                    event: "University Rover Challenge (URC)",
+                    details: ["Utah, USA - 2022"]
+                },
+                {
+                    event: "International Rover Challenge (IRC)",
+                    details: ["Karnataka, India - 2023"]
+                }
             ]
         }
     ];
@@ -180,10 +180,10 @@ const AcademicsAndAchievements = () => {
                                             </ul>
                                         )}
                                         {ach.subEvents && ach.subEvents.length > 0 && (
-                                            <div className="ach-sub-events" style={{ marginTop: '1rem' }}>
+                                            <div className="ach-sub-events" style={{ marginTop: '0.8rem' }}>
                                                 {ach.subEvents.map((sub, sIdx) => (
                                                     <div key={sIdx} className="ach-sub-event-group" style={{ marginBottom: '1rem' }}>
-                                                        <div className="ach-event" style={{ marginBottom: '0.5rem' }}>{sub.event}</div>
+                                                        <div className="ach-event" style={{ marginBottom: '0.2rem' }}>{sub.event}</div>
                                                         {sub.details && sub.details.length > 0 && (
                                                             <ul className="ach-details">
                                                                 {sub.details.map((detail, dIdx) => (
