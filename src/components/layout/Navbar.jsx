@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Sun, Moon } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import resumePdf from '../../../Resources/resume.pdf';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -66,7 +67,7 @@ const Navbar = () => {
                     <button onClick={toggleTheme} className="theme-toggle-btn" aria-label="Toggle Theme">
                         {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
                     </button>
-                    <a href="#" className="resume-btn" onClick={(e) => { e.preventDefault(); alert('Resume not available yet. Please upload resume.pdf.'); }}>
+                    <a href={resumePdf} download="Khaliduzzaman_Mredul_Resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-btn">
                         Resume
                     </a>
                 </div>
@@ -94,7 +95,7 @@ const Navbar = () => {
                 <button onClick={toggleTheme} className="mobile-theme-toggle-btn" aria-label="Toggle Theme">
                     {theme === 'dark' ? <><Sun size={20} /> Light Mode</> : <><Moon size={20} /> Dark Mode</>}
                 </button>
-                <a href="#" className="mobile-resume-btn" onClick={(e) => { e.preventDefault(); alert('Resume not available yet. Please upload resume.pdf.'); }}>
+                <a href={resumePdf} download="Khaliduzzaman_Mredul_Resume.pdf" target="_blank" rel="noopener noreferrer" className="mobile-resume-btn">
                     Resume
                 </a>
             </div>
