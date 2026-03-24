@@ -68,8 +68,8 @@ const AcademicsAndAchievements = () => {
 
                     {/* Left Column: Academics & Extracurriculars */}
                     <div className="academics-col">
-
-                        <h2 className="section-title" style={{ textAlign: 'left', marginBottom: '1rem', marginTop: 0 }}>Academic History</h2>
+                        <div className="acad-group" style={{ display: 'flex', flexDirection: 'column', flex: 1, marginBottom: '2rem' }}>
+                            <h2 className="section-title" style={{ textAlign: 'left', marginBottom: '1rem', marginTop: 0 }}>Academic History</h2>
 
                         <motion.div
                             className="academic-card glass-panel"
@@ -102,8 +102,10 @@ const AcademicsAndAchievements = () => {
                                 <span>Dr. Anwarul Abedin Leadership Award (Chairman's Gold)</span>
                             </div>
                         </motion.div>
+                        </div>
 
-                        <h2 className="section-title" style={{ textAlign: 'left', marginBottom: '1rem', marginTop: '3rem' }}>Extracurricular Activities</h2>
+                        <div className="extra-group" style={{ display: 'flex', flexDirection: 'column', flex: 1.2 }}>
+                            <h2 className="section-title" style={{ textAlign: 'left', marginBottom: '1rem', marginTop: 0 }}>Extracurricular Activities</h2>
 
                         <div className="extracurricular-list">
                             <motion.div
@@ -147,6 +149,7 @@ const AcademicsAndAchievements = () => {
                                     </div>
                                 </div>
                             </motion.div>
+                        </div>
                         </div>
 
                     </div>
