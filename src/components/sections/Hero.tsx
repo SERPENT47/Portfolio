@@ -28,7 +28,7 @@ const Hero = () => {
                     </h2>
 
                     <p className="hero-description">
-                        AI & Robotics Enthusiast with 3+ years of professional experience building scalable AI/ML systems in the Computer Vision and NLP domains. Proven track record in transforming advanced research into industry-standard embedded products and IoT solutions. Possess strong expertise in 3D Design and rapid prototyping alongside deep interest in robotics and intelligent systems with noteworthy national & international competitive achievements.
+                        AI & Robotics Enthusiast with 3+ years of professional experience building scalable AI/ML systems in the Computer Vision and NLP domains. Proven track record in transforming advanced research into industry-standard embedded products and IoT solutions. Possess deep interest in robotics and intelligent systems with noteworthy national & international competitive achievements.
                     </p>
 
                     <div className="hero-cta">
