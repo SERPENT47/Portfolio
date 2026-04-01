@@ -37,6 +37,9 @@
     font-weight: 800;
     color: var(--text-primary);
     letter-spacing: 1px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
 }
 
 .logo-dot {
@@ -47,7 +50,6 @@
     display: flex;
     gap: 2rem;
     align-items: center;
-    transform: translateY(-3px);
 }
 
 .nav-link {
@@ -131,10 +133,6 @@
     .mobile-only {
         display: block;
         color: var(--text-primary);
-    }
-
-    .mobile-menu-btn {
-        transform: translateY(-3px);
     }
 
     .mobile-menu {
