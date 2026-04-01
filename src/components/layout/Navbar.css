@@ -3,13 +3,13 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 0;
     z-index: 1000;
     transition: all var(--transition-normal);
 }
 
 .navbar.scrolled {
-    padding: 1rem 2rem;
+    padding: 1rem 0;
     background: var(--nav-bg-scrolled, rgba(10, 10, 15, 0.8));
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -25,6 +25,7 @@
 .nav-content {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -115,7 +116,11 @@
 /* Mobile Responsive */
 @media (max-width: 768px) {
     .navbar {
-        padding: 1rem;
+        padding: 1rem 0;
+    }
+
+    .nav-content {
+        padding: 0 1.5rem;
     }
 
     .desktop-only {
