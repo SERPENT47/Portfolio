@@ -1,9 +1,8 @@
 .hero-section {
-    min-height: 100vh;
+    min-height: 100svh;
     display: flex;
     align-items: stretch;
     position: relative;
-    overflow: hidden;
     padding: 11.5rem 2rem 10rem 2rem;
 }
 
