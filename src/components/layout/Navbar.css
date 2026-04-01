@@ -112,6 +112,10 @@
     background: var(--glass-bg);
 }
 
+.mobile-menu {
+    display: none;
+}
+
 .mobile-menu-backdrop {
     display: none;
 }
