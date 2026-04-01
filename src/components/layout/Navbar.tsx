@@ -81,6 +81,12 @@ const Navbar = () => {
                 </button>
             </div>
 
+            {/* Full-screen Blur Backdrop */}
+            <div 
+                className={`mobile-menu-backdrop ${mobileMenuOpen ? 'open' : ''}`} 
+                onClick={() => setMobileMenuOpen(false)} 
+            />
+
             {/* Mobile Menu */}
             <div className={`mobile-menu ${mobileMenuOpen ? 'open' : ''} glass-panel`}>
                 {navLinks.map((link) => (

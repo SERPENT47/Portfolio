@@ -112,7 +112,7 @@
     background: var(--glass-bg);
 }
 
-.mobile-menu {
+.mobile-menu-backdrop {
     display: none;
 }
 
@@ -149,6 +149,25 @@
         transition: all var(--transition-normal);
         border-radius: 0 0 16px 16px;
         z-index: -1;
+    }
+
+    .mobile-menu-backdrop {
+        display: block;
+        position: fixed;
+        top: 0; left: 0;
+        width: 100vw; height: 100vh;
+        background: rgba(10, 10, 15, 0.4);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        opacity: 0;
+        pointer-events: none;
+        z-index: -2;
+        transition: opacity var(--transition-normal);
+    }
+
+    .mobile-menu-backdrop.open {
+        opacity: 1;
+        pointer-events: all;
     }
 
     .mobile-menu.open {
