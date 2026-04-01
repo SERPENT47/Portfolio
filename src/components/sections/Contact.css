@@ -67,6 +67,8 @@
 .info-item p {
     color: var(--text-secondary);
     font-size: 1rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .info-item a:hover {
